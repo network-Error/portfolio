@@ -33,6 +33,10 @@ body {
     color: #ffffff;
 }
 
+h2 {
+    margin: 0;
+}
+
 /* Header */
 
 .header {
@@ -112,4 +116,230 @@ body {
 
 a.active-en {
     color: #bdae82;
+}
+
+/* Hero */
+
+.hero-container {
+    background-image: url('./assets/img/bg.jpg');
+    background-position: center -90px;
+    background-repeat: no-repeat;
+    height: 910px;
+}
+
+.hero-container h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 120px;
+}
+
+.hero-block {
+    width: 500px;
+    padding-top: 160px;
+}
+
+.hero-text {
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    width: 220px;
+    height: 55px;
+    cursor: pointer;
+    background-color: #bdae82;
+    color: #000000;
+    text-align: center;
+    border: none;
+    transition: .3s;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.hero-btn:hover {
+    color: #ffffff;
+}
+
+/* Skills */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-block span,
+.portfolio-block span,
+.video-block span {
+    width: 700px;
+    height: 2px;
+    background-color: #bdae82;
+    position: absolute;
+    top: 25px;
+    z-index: -1;
+}
+
+.skills-block,
+.portfolio-block,
+.video-block {
+    position: relative;
+    width: 700px;
+    margin-bottom: 60px;
+}
+
+h2.section-title {
+   display: flex;
+   width: 152px;
+   background-color: black;
+   z-index: 10;
+   justify-content: center;
+   margin: 0 auto;
+   color: #bdae82;
+   font-family: 'Merriweather', serif;
+   font-size: 40px;
+}
+
+.skills-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.item-head,
+.item-text {
+    margin: 0;
+    padding: 0 20px;
+}
+
+.skills-item {
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skills-item img {
+    height: 50px;
+    margin: 0 auto 50px;
+}
+
+.skills-item .img-photo {
+    width: 62px;
+}
+
+.skills-item .img-video {
+    width: 60px;
+}
+
+.skills-item .img-picture {
+    width: 66px;
+}
+
+.skills-item .img-mic {
+    width: 32px;
+}
+
+.item-head {
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.item-text {
+    line-height: 36px;
+    font-size: 18px;
+}
+
+/* Portfolio */
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1500px;
+}
+
+.portfolio-block {
+    margin-top: 100px;
+}
+
+.portfolio-block h2.section-title {
+    width: 181px;
+    padding: 0 20px;
+}
+
+.portfolio-btns {
+    margin-bottom: 60px;
+}
+
+.portfolio-btn {
+    width: 220px;
+    height: 55px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #bdae82;
+    text-align: center;
+    border: none;
+    transition: .3s;
+    line-height: 40px;
+    text-decoration: none;
+    border: 1px solid #bdae82;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn.active {
+    color: #000000;
+    background-color: #bdae82;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* Video */
+
+.video-container {
+    height: 945px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video-block {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-block h2.section-title {
+    width: 154px;
+    padding: 0 20px;
+}
+
+.video-player {
+    height: 705px;
+    background-image: url('./assets/img/player-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.video-player button {
+    cursor: pointer;
+}
+
+.video-player img {
+    position: absolute;
+    top: 288px;
+    left: 660px;
 }
