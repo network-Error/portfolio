@@ -119,6 +119,39 @@ a.active-en {
     color: #bdae82;
 }
 
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+}
+
+.line {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+    margin: 3px 0;
+    z-index: 15;
+    transition: all .3s ease-in-out;
+}
+
+.burger-menu.open .line1 {
+    transform: rotate(-45deg) translate(-5px 6px);
+}
+
+.burger-menu.open .line2 {
+    opacity: 0;
+}
+
+.burger-menu.open .line3 {
+    transform: rotate(45deg) translate(-5px -6px);
+}
+
 /* Hero */
 
 .hero-container {
@@ -521,4 +554,208 @@ textarea {
 
 .social-list a img:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+/* Adaptiv */
+
+@media (max-width: 1439px) {
+    .container {
+        /* width: 1200px; */
+        width: inherit;
+        padding: 0;
+    }
+
+    .header {
+        padding: 0 15px;
+    }
+
+    .right-area {
+        display: none;
+    }
+
+    .hero-container {
+        height: 590px;
+    }
+
+    .hero-block {
+        padding: 78px 15px 0;
+    }
+
+    .hero-block h1 {
+        font-size: 32px;
+        line-height: 64px;
+        margin-bottom: 20px;
+    }
+
+    .hero-block .hero-text {
+        line-height: 24px;
+        margin-bottom: 60px;
+    }
+
+    /* Skills */
+    .skills-block {
+        margin-top: 80px;
+        margin-bottom: 36px;
+        width: 365px;
+    }
+
+    .skills-block span {
+        width: 365px;
+    }
+
+    .skills-block .section-title {
+        width: 131px;
+        font-size: 32px;
+    }
+
+    .skills-items {
+        padding: 0 20px;
+    }
+
+    .skills-item {
+        width: 300px;
+    }
+
+    .item-text {
+        line-height: 22px;
+    }
+
+    /* Portfolio */
+    .portfolio-container {
+        height: auto;
+    }
+
+    .portfolio-block {
+        margin: 80px 0 50px;
+        width: 365px;
+    }
+
+    .portfolio-block span {
+        width: 365px;
+    }
+
+    .portfolio-block h2.section-title {
+        width: 185px;
+        font-size: 32px;
+        padding: 0;
+    }
+
+    .portfolio-btns {
+        width: 445px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .portfolio-items {
+        justify-content: center;
+    }
+
+    /* Video */
+    .video-container {
+        height: auto;
+    }
+
+    .video-block {
+        margin: 80px auto 50px;
+        width: 365px;
+    }
+
+    .video-block span {
+        width: 365px;
+    }
+
+    .video-block h2.section-title {
+        width: 131px;
+        font-size: 32px;
+        padding: 0;
+    }
+
+    .video-player {
+        height: 418px;
+    }
+
+    .video-player img {
+        width: 75px;
+        height: 75px;
+        top: 165px;
+        left: 348px;
+    }
+
+    /* Price */
+    .price-container {
+        height: auto;
+    }
+
+    .price-block {
+        margin: 80px auto 50px;
+        width: 365px;
+    }
+
+    .price-block span {
+        width: 365px;
+    }
+
+    .price-block h2.section-title {
+        width: 122px;
+        font-size: 32px;
+        padding: 0;
+    }
+
+    .price-items {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .price-item {
+        width: 420px;
+        border: 2px solid #bdae82;
+    }
+
+    /* Contacts */
+    .contacts-container {
+        height: 600px;
+    }
+
+    .contact-container {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .contact-container .section-title {
+        font-size: 32px;
+        line-height: 64px;
+        margin-bottom: 40px;
+    }
+
+    input[type='email'],
+    input[type='tel'],
+    textarea {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .contact-btn {
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-data {
+        margin-top: 28px;
+        margin-bottom: 16px;
+    }
+
+    .footer-data p {
+        margin: 0;
+        line-height: 24px;
+    }
+
+    .rss {
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
 }
