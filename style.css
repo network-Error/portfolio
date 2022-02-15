@@ -337,14 +337,15 @@ h2.section-title {
     position: relative;
 }
 
-.video-player button {
-    cursor: pointer;
-}
-
 .video-player img {
     position: absolute;
     top: 288px;
     left: 660px;
+    transition: .3s;
+}
+
+.video-player img:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 /* Price */
@@ -512,4 +513,12 @@ textarea {
 .social-list {
     display: flex;
     gap: 20px;
+}
+
+.social-list a img {
+    transition: .3s;
+}
+
+.social-list a img:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
