@@ -1,7 +1,11 @@
 // Burger menu
-const burger = document.querySelector('.burger-menu');
+
+const hamburger = document.querySelector('.hamburger');
+const navBar = document.querySelector('.wrapper-nav');
 
 function toggleMenu() {
-    burger.classList.toggle('open');
+  hamburger.classList.toggle('open');
+  navBar.classList.toggle('show');
 }
-burger.addEventListener('click', toggleMenu);
+
+hamburger.addEventListener('click', toggleMenu);
