@@ -576,6 +576,7 @@ textarea {
 
     .right-area {
         display: flex;
+        margin-left: 442px;
     }
 
     .wrapper-nav {
@@ -791,5 +792,204 @@ textarea {
     .rss {
         line-height: 24px;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 649px) {
+    .right-area {
+        margin-left: 0;
+    }
+
+    .wrapper-nav {
+        width: 380px;
+    }
+
+    .hero-block h1 {
+        font-size: 25px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+        margin-bottom: 45px;
+    }
+
+    .skills-items {
+        justify-content: center;
+    }
+
+    .item-head {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .item-text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .portfolio-btns {
+        width: 400px;
+    }
+
+    .video-player {
+        background-size: 100%;
+    }
+
+    .video-player img {
+        top: 40%;
+        left: 45%;
+    }
+
+    .price-item {
+        width: 350px;
+    }
+
+    .price-item h3 {
+        font-size: 24px;
+        line-height: 40px;
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+
+    .price-text span {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .price-btn {
+        width: 200px;
+        height: 50px;
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+
+    .contacts-container {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+
+    .contact-container {
+        align-items: center;
+        padding-top: 45px;
+    }
+
+    .section-title.contact-title {
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    input[type='email'],
+    input[type='tel'],
+    textarea {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .contact-btn {
+        width: 200px;
+        height: 45px;
+    }
+
+    .footer-data {
+        margin-top: 20px;
+    }
+
+    .footer-data p {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .rss {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 529px) {
+    .header {
+        background-size: 150%;
+    }
+
+    .hero-container {
+        background-size: 150%;
+        padding: 0 15px;
+        height: 450px;
+    }
+
+    .hero-block {
+        padding: 30px 0 0;
+        width: 300px;
+    }
+
+    .hero-btn {
+        width: 200px;
+        height: 45px;
+    }
+
+    .hero-block .hero-text {
+        margin-bottom: 40px;
+    }
+
+    .skills-block {
+        margin-top: 50px;
+    }
+
+    .portfolio-block {
+        margin-top: 60px;
+    }
+
+    .portfolio-btn {
+        width: 200px;
+        height: 45px;
+    }
+
+    .video-block {
+        margin-top: 70px;
+    }
+
+    .video-player {
+        height: 350px;
+    }
+
+    .price-block {
+        margin-top: 70px;
+    }
+
+    .contacts-container {
+        height: 350px;
+    }
+
+    .contact-container {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 489px) {
+    .header {
+        background-size: 125%;
+    }
+
+    .hero-block {
+        margin: 0 auto;
+    }
+
+    .portfolio-items img {
+        width: 350px;
+    }
+
+    .video-player {
+        height: 300px;
+    }
+
+    .video-player img {
+        top: 35%;
+        left: 42%;
+    }
+
+    .contact-container {
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
