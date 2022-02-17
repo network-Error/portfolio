@@ -18,7 +18,7 @@ body {
 .container {
     width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 .bg-dark {
@@ -110,12 +110,15 @@ h3 {
     justify-content: space-between;
 }
 
-.switch-lang a {
+.switch-lang button {
+    border: 0;
+    background-color: inherit;
+    cursor: pointer;
     color: #ffffff;
     text-decoration: none;
 }
 
-a.active-en {
+button.active-en {
     color: #bdae82;
 }
 
@@ -330,8 +333,12 @@ h2.section-title {
     border: 1px solid #bdae82;
 }
 
-.portfolio-btn:hover,
-.portfolio-btn.active {
+.portfolio-btn:hover {
+    color: #000000;
+    background-color: #bdae82;
+}
+
+.active {
     color: #000000;
     background-color: #bdae82;
 }
