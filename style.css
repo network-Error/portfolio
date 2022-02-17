@@ -993,3 +993,76 @@ textarea {
         padding-left: 15px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 450px) {
+    .header {
+        background-size: 210%;
+    }
+
+    .hero-container {
+        background-size: 210%;
+    }
+
+    .skills-block {
+        width: 300px;
+    }
+
+    .skills-block span {
+        width: 300px;
+    }
+
+    .portfolio-block {
+        width: 300px;
+    }
+
+    .portfolio-block span {
+        width: 300px;
+    }
+
+    .portfolio-btns {
+        width: 300px;
+    }
+
+    .portfolio-items,
+    .portfolio-items img {
+        width: 300px;
+    }
+
+    .video-block,
+    .video-block span {
+        width: 300px;
+    }
+
+    .video-player img {
+        width: 65px;
+        height: 65px;
+        top: 38%;
+        left: 40%;
+    }
+
+    .price-block,
+    .price-block span {
+        width: 300px;
+    }
+
+    .price-items,
+    .price-item {
+        width: 300px;
+    }
+
+    .contacts-container {
+        height: auto;
+    }
+
+    .contact-container {
+        width: 300px;
+    }
+
+    .footer-container {
+        width: 300px;
+    }
+
+    .footer-data {
+        margin-top: 30px;
+    }
+}
